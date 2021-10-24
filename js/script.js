@@ -20,7 +20,10 @@ window.addEventListener('load', (event) => {
 
   /******  screen resize function ********/
   var width = $(window).width();
+
+
   $(window).on('resize', function() {
+      
     if ($(this).width() !== width){
 
       if($(this).width() < 992){
@@ -47,10 +50,13 @@ window.addEventListener('load', (event) => {
  
   document.querySelectorAll(".pagination_agenda").forEach(function(item){
 
-    //item.classList.remove("pagination_agenda_act");
 
     item.addEventListener("click", function(event){
       event.preventDefault();
+
+        document.querySelector(".pagination_agenda_act").classList.remove("pagination_agenda_act");
+
+        this.classList.add("pagination_agenda_act");
 
         var new_pos = this.getAttribute('data-agenda');     
 

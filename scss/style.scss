@@ -16,8 +16,9 @@ $color_eight : #d3d3d3;
 /*** Reste ***/
 
 body{	
-	width: 100%;
+	width: 1519px;
 	height: 100%;
+	margin:0 auto;
 }
 
 a{
@@ -581,7 +582,6 @@ a{
 }
 
 
-
 .block_agenda{
 
 	width: 505px;	
@@ -664,9 +664,6 @@ a{
 }
 
 
-#pagination_agenda{
-
-}
 
 .pagination_agenda{
 		hr{
@@ -847,7 +844,6 @@ a{
 
 	margin-top: 225px;
 	margin-left: -26px;
-
 }
 
 #ouverture_horaires{
@@ -892,30 +888,41 @@ a{
 }
 
 #formation_img{
-	margin-left: 20%;
+	padding-right: 67px;
+	width: 618px;
+	height: 378px;
 	img{
-		width: 618px;
-		height: 378px;		
+		width: 100%;
+		height: 100%;		
 	}
 }
 
+#sp_formation_img_b{
+	width: 100%;
+}
+
 #sp_formation_img{
-		width: 563px;
+		width: 40%;
 		height: 260px;	
 	img{
 		margin-top: -180px;
 		z-index: -99;
 		width: 100%;
-		height: 100%;	
+		height: 90%;	
 	}
 }
 
 #block_formation{
 	width: 100%;
+
 }
 
 #block_formation_b{
 		width: 50%;
+}
+
+#formation_img_b{
+	width: 50%;
 }
 
 
@@ -924,7 +931,7 @@ a{
 #reseaux{
 	width: 100%;
 	padding-left: 100px; 
-	padding-top: 140px;
+	padding-top: 0px ;
 }
 
 #posts_instagrams{
@@ -935,6 +942,7 @@ a{
 	}
 }
 
+
 #img_reseaux{
 }
 
@@ -943,6 +951,7 @@ a{
 }
 
 .reseaux_img{
+	margin-right: 32px;
 	a{
 		width: 236px;
 		height: 236px;
@@ -966,7 +975,6 @@ a{
 }
 
 #footer_title{
-
 	h2{
 		font-size: 20px;
 		font-weight: normal;
@@ -1077,7 +1085,7 @@ a{
 
 //***  Responsive  ***//
 
-
+/*/
 @media screen and (max-width: 576px)  {
 
 	.rapide_acces{
@@ -1148,28 +1156,15 @@ a{
 		margin-left: 8% !important;
 	}
 
+
 }
 
 @media screen and (max-width: 768px) and (min-width: 576px){
 
 
-	#header{
-	  background-size: 100% 500px;
-		height: 500px;
-		width: 100%;
-		overflow: hidden;
-	}
 
-	#acces_rapide{
-		margin-top: 220px !important;
-	}	
 
-	.card{
-		width: 70% !important;
-		height: 450px !important;
-		margin-right: 20% ;
-		margin-bottom: 5%;
-	}
+
 
 	.sp_title{
 		h2{
@@ -1200,7 +1195,7 @@ a{
 	#block_accueil{
 		margin-left: 8% !important;
 		width: 500px !important;
-		margin-top: 0px !important;;
+		margin-top: 0px !important;
 	}
 
 	#welcome_horaires{
@@ -1209,32 +1204,13 @@ a{
 		margin-left: 8% !important;
 	}
 
+
 }
 
 
 
 @media screen and (max-width: 992px) and( min-width: 769px){
 	
-
-
-	.card{
-		width: 45%;
-		height: 450px;
-		margin-right: 5%;
-		margin-bottom: 5%;
-	}
-
-
-	.card_title{
-		a{
-			font-size: 14px;
-		}
-	}
-
-	.card_text{
-			height: 80px !important;
-			overflow: hidden;				
-	}
 
 
 
@@ -1252,21 +1228,6 @@ a{
 		height: 500px;
 	}	
 
-	#lavie{
-		padding-left: 60px; 
-	}	
-
-	.block_lavie{
-		width: 350px;
-		a{
-			text-decoration: none;
-			width: 100%;
-			img{
-				width: 350px;
-				height: 180px;
-			}
-		}
-	}
 
 
 	#formation_img{
@@ -1285,8 +1246,642 @@ a{
 
 }
 
+*/
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 576px){
+
+	#acces_rapide{
+		margin-top: 330px;
+	}
+
+	.rapide_acces{
+		a{
+			width: 120px;
+			height: 110px;
+			color: $color_three;
+		}
+	}
+
+	.sp_title{
+		h2{
+			font-size: 22px;
+			line-height: 0.5;
+		}
+	}	
+
+	.sp_hr{
+		hr{
+	    	width: 22px;
+	    	margin: 20px 0px 0px 5px; 
+			}
+	}
+
+	.card{
+		width: 70% ;
+		height: 480px ;
+		margin-right: 20% ;
+		margin-bottom: 5%;
+	}
+
+
+
+	#lavie{
+		padding-left: 40px; 
+	}
+
+	#lavie_block{
+		margin-top: 5px;
+	}
+
+	.block_lavie{
+		width: 450px;
+		a{
+			width: 100%;
+			img{
+				width: 100%;
+				height: 250px;
+			}
+		}
+	}
+
+
+	#retrouvez_nous{
+	  background-size: 100% 340px;
+	  width: 100%;
+		height: 850px;
+		margin-top: 80px;
+		margin-bottom: 200px;
+	}
+
+
+	#block_accueil{
+		height: 470px;
+		width: 100%;
+		border: none;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;		
+		-moz-border-radius: 0px;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+
+		margin-left: 0px;
+		margin-top: 342px;		
+	}
+
+	#welcome_horaires{
+		width: 100%;
+		height: 260px;
+		background : $color_two;
+
+		border-radius: 30px 0px 30px 0px;
+		-webkit-border-radius: 30px 0px 30px 0px;
+		-moz-border-radius: 30px 0px 30px 0px;
+
+		margin-top: 8px;
+		margin-left: 0px;
+	}
+
+
+	#formation{
+		padding-left: 0px; 
+		width: 100%;
+	}
+
+	#formation_img{	
+		padding-right: 0px;
+		width: 100%;	
+		height: 300px;
+		img{
+			border-radius: 30px 0px 30px 0px;
+			-webkit-border-radius: 30px 0px 30px 0px;
+			-moz-border-radius: 30px 0px 30px 0px;				
+		}
+
+	}
+
+	#formation_img_b{
+		width: 100%;
+	}
+
+	#formation_text{
+		width: 150px;
+	}
+
+	#sp_formation_img_b{
+		visibility: hidden;
+	}
+
+	#block_formation{
+		width: 100%;
+		text-align: center ;	
+	}
+
+	#block_formation_b{
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+	#formation_title{
+		width: 100%;
+		h2{
+			font-size: 16px;
+		}
+	}
+
+
+	#formation_text{
+		width: 100%;
+		 padding:12px;
+		p{
+			font-size: 14px;
+		}	
+	}
+
+	#formation_btn{
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}	
+
+	#formation_img_b{
+		width: 100%;
+	}
+
+
+	.reseaux_img{
+		margin-top: 20px;
+		width: 350px;
+		height: 350px;
+		a{
+			width: 350px;
+			height: 350px;
+		}
+	}	
+
+
+		#footer{
+		margin-bottom: 50px;
+	}
+
+	#footer_info{
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#footer_adresse{
+		text-align: center;
+		h6{
+			width: 100%;
+		}
+	}
+
+	#footer_map{
+		width: 100%;
+		height: 566px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+	#footer_title{
+		width: 100%;
+		h2{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	#sp_gropue, #radio_b, #uni_occ{
+		align-items: center;
+  	justify-content: center;
+	}
+
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+
+	#acces_rapide{
+		margin-top: 350px;
+	}
+
+	.big_title{
+		width: 87%;
+		margin-bottom: 40px;
+	}
+
+
+	.sp_title{
+		h2{
+			font-size: 30px;
+			line-height: 0.5;
+		}
+	}	
+
+	.sp_hr{
+		hr{
+	    	width: 50px;
+	    	margin: 20px 0px 0px 10px; 
+			}
+	}
+
+	.card{
+		width: 70% ;
+		height: 480px ;
+		margin-right: 20% ;
+		margin-bottom: 5%;
+	}
+
+
+	.card_date{
+		margin: 20px 0px 10px 0px;
+	}	
+
+
+	#lavie_block{
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	.block_lavie{
+		width: 450px;
+		a{
+			width: 100%;
+			img{
+				width: 100%;
+				height: 250px;
+			}
+		}
+	}
+
+
+	#retrouvez_nous{
+	  background-size: 100% 340px;
+		height: 900px;
+		margin-top: 80px;
+		margin-bottom: 200px;
+	}
+
+
+	#block_accueil{
+		height: 470px;
+		width: 100%;
+		border: none;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;		
+		-moz-border-radius: 0px;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+
+		margin-left: 0px;
+		margin-top: 342px;		
+	}
+
+	#welcome_horaires{
+		width: 100%;
+		height: 260px;
+		background : $color_two;
+		border-radius: 30px 0px 30px 0px;
+		-webkit-border-radius: 30px 0px 30px 0px;
+		-moz-border-radius: 30px 0px 30px 0px;
+		margin-top: 8px;
+		margin-left: 0px;
+	}
+
+
+	#formation{
+		padding-left: 0px; 
+		width: 100%;
+	}
+
+	#formation_img{	
+		padding-right: 0px;
+		width: 100%;	
+		height: 300px;
+		img{
+			border-radius: 30px 0px 30px 0px;
+			-webkit-border-radius: 30px 0px 30px 0px;
+			-moz-border-radius: 30px 0px 30px 0px;				
+		}
+
+	}
+
+	#formation_img_b{
+		width: 100%;
+	}
+
+	#formation_text{
+		width: 150px;
+	}
+
+	#sp_formation_img_b{
+		visibility: hidden;
+	}
+
+	#block_formation{
+		width: 100%;
+		text-align: center ;	
+	}
+
+	#block_formation_b{
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+	#formation_title{
+		width: 100%;
+		h2{
+			font-size: 16px;
+		}
+	}
+
+
+	#formation_text{
+		width: 100%;
+		 padding:12px;
+		p{
+			font-size: 14px;
+		}	
+	}
+
+	#formation_btn{
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}	
+
+	#formation_img_b{
+		width: 100%;
+	}
+
+
+	.reseaux_img{
+		margin-top: 20px;
+		width: 190px;
+		height: 190px;
+		a{
+			width: 200px;
+			height: 200px;
+		}
+	}	
+
+
+	#footer{
+		margin-bottom: 50px;
+	}
+
+	#footer_info{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	#footer_map{
+		width: 100%;
+		height: 566px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+
+	#footer_title{
+		width: 100%;
+		h2{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+
+	#footer{
+		margin-bottom: 50px;
+	}
+
+	#footer_info{
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#footer_adresse{
+		text-align: center;
+		h6{
+			width: 100%;
+		}
+	}
+
+	#footer_map{
+		width: 100%;
+		height: 566px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+
+	#footer_title{
+		width: 100%;
+		h2{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	#sp_gropue, #radio_b, #uni_occ{
+		align-items: center;
+  	justify-content: center;
+	}
+
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+	.big_title{
+		width: 87%;
+		margin-bottom: 40px;
+	}
+
+
+	.sp_title{
+		h2{
+			font-size: 40px;
+			line-height: 0.5;
+		}
+	}	
+
+	.sp_hr{
+		hr{
+	    	width: 80px;
+			}
+	}
+
+
+	.card{
+		width: 45%;
+		height: 450px;
+		margin-right: 5%;
+		margin-bottom: 5%;
+	}
+
+
+	.card_title{
+		a{
+			font-size: 14px;
+		}
+	}
+
+	.card_text{
+			height: 80px;
+			overflow: hidden;				
+	}
+
+	#pagination_agenda{
+		margin-left: 50px;
+	}
+
+
+	.block_agenda{
+		width: 390px;	
+		height: 260px;
+	}	
+
+
+	#lavie_block{
+		margin-top: 50px;
+		margin-left: 0px;
+	}
+
+	.block_lavie{
+		width: 320px;
+		a{
+			width: 100%;
+			img{
+				width: 100%;
+				height: 200px;
+			}
+		}
+	}
+
+
+	#retrouvez_nous{
+		height: 400px;
+	}
+
+
+	#block_accueil{
+		height: 470px;
+		width: 430px ;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		margin-left: 10%;
+		margin-top: 100px;
+
+		box-shadow: 5px 5px 5px 5px rgba(175,167,167);
+		-webkit-box-shadow: 5px 5px 5px 5px rgba(175,167,167);
+		-moz-box-shadow: 5px 5px 5px 5px rgba(175,167,167);
+	}
+
+	#welcome_horaires{
+		width: 230px;
+		height: 260px;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		margin-top: 225px;
+		margin-left: -26px;
+	}	
+
+
+	#formation_img{
+		height: 300px;
+	}
+
+
+	#formation_text{
+		width: 300px;
+	}
+
+
+	.reseaux_img{
+		margin-top: 20px;
+		width: 260px;
+		height: 260px;
+		a{
+			width: 260px;
+			height: 260px;
+		}
+	}
+
+
+
+	#footer{
+		margin-bottom: 50px;
+	}
+
+	#footer_info{
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#footer_adresse{
+		text-align: center;
+		h6{
+			width: 100%;
+		}
+	}
+
+	#footer_map{
+		width: 100%;
+		height: 566px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+	#footer_title{
+		width: 100%;
+		h2{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	#sp_gropue, #radio_b, #uni_occ{
+		align-items: center;
+  	justify-content: center;
+	}
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+	#acces_rapide{
+		margin-top: 250px;
+	}
 
 	#pr_card{
 		width: 86%;
@@ -1323,26 +1918,38 @@ a{
 	}
 
 	#pr_date{
+		margin: 10px 0px 20px 0px;
 		a{
 			line-height: 0.25;
 		}
 	}
 
 
-	#formation_img{
-		margin-left: 10%;
-		img{
-			width: 70%;	
-			height: 60%;
+	.block_agenda{
+		width: 320px;	
+		height: 260px;
+	}
+
+
+	#lavie{
+		padding-left: 80px; 
+	}	
+
+	#lavie_block{
+		margin-top: 50px;
+	}
+
+	.block_lavie{
+		width: 380px;
+		a{
+			width: 100%;
+			img{
+				width: 380px;
+				height: 200px;
+			}
 		}
 	}
 
-	#sp_formation_img{
-		img{
-			width: 70%;
-			height: 100%;
-		}
-	}
 
 	#block_accueil{
 		margin-left: 11%;
@@ -1353,18 +1960,56 @@ a{
 		width: 300px;
 	}
 
-	.sp_title{
-		h2{
-			font-size: 40px;
-			line-height: 0.5;
+	#formation_img{
+		height: 350px;
+	}
+
+	#formation_text{
+		width: 320px;
+	}
+
+
+	.reseaux_img{
+		margin-top: 20px;
+			width: 100%;
+			height: 100%;
+		a{
+			width: 100%;
+			height: 100%;
 		}
 	}	
 
-	.sp_hr{
-		hr{
-	    	width: 80px;
-			}
+	#footer{
+		margin-bottom: 50px;
+	}
+
+	#footer_info{
+		width: 50%;
+		margin-bottom: 50px;
+	}
+
+	#footer_map{
+		width: 50%;
+		height: 566px;
+		img{
+			width: 100%;
+			height: 100%;
 		}
+	}
+
+
+
+}
+
+
+/*@media screen and (max-width: 1200px){
+
+	
+
+
+
+
+
 
 		#footer_info{
 			width: 100%;
@@ -1376,7 +2021,7 @@ a{
 		}
 
 
-}
+}*/
 
 
 
@@ -1398,9 +2043,8 @@ a{
 		display: none !important;
 	}
 
-	#acces_rapide{
+/*	#acces_rapide{
 		margin-top: 350px;
-	}
+	}*/
 
 }
-
